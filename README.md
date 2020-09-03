@@ -13,4 +13,4 @@ A basic bingo game you play with a friend
   - Enter "java BingoGame" in the command line
 
 ## Visuals
-![What it would look like in the command line]()
+![What it would look like in the command line](https://github.com/xvxvdee/BingoBasic/blob/master/BingoGameVisuals.jpg)
