@@ -5,7 +5,7 @@ import java.util.*;
 public class BingoGame {
     public static void main(String[] args) {
         int pOneChoice=2, pTwoChoice=2;
-        int versus=0,cardSize = 2;
+        int versus=0,cardSize = 4;
 
         String[][] playerOne = new String[cardSize][cardSize];
         String[][] playerTwo = new String[cardSize][cardSize];
@@ -18,7 +18,6 @@ public class BingoGame {
         System.out.println("WELCOME TO BINGO *^____^*");
         System.out.println("Would you like to play with a friend or against the computer?");
         System.out.println("PRESS 1: Play with a friend");
-        System.out.println("PRESS 2: Play against the computer");
         do {
             try {
                 System.out.print("Choice: ");
@@ -82,8 +81,6 @@ public class BingoGame {
                     printCardsSideBySide(u1, u2,cardSize);
 
                 }
-                break;
-            case 2:
                 break;
 
 
@@ -162,7 +159,7 @@ public class BingoGame {
     }
 
     public static void printCardsSideBySide(String[][] user1, String[][] user2, int cardSize) {
-        System.out.println("\t PLAYER 1 \t\t\t\t\t PLAYER 2");
+        System.out.println("\tPLAYER 1 \t\t\t\t\t PLAYER 2");
 
         for (int a = 0; a <cardSize; a++) {
             for (int b = 0; b < cardSize; b++) {
@@ -172,7 +169,7 @@ public class BingoGame {
             for (int c = 0; c < cardSize; c++) {
                 System.out.print(user2[a][c] + "\t");
             }
-            System.out.println();
+            System.out.println("\n");
         }
     }
 
@@ -192,7 +189,7 @@ public class BingoGame {
                 switch (userAns) {
                     case 0:
                         if (user[a][b].equals(num)) {
-                            System.out.println("Awe you missed " + num + " on your bingo card. (。﹏。*)");
+                            System.out.println("Awe you missed " + num + " on your bingo card.");
                         }
                         break;
                     case 1:
